@@ -2,7 +2,8 @@ import UIKit
 
 var greeting = "Hello, playground"
 
-var mynumber = 2 * 25
+var mynumber: Int
+mynumber = 2 * 25
 var anothernumber = 8 - 40 * 2
 var myfraction1 = 5.0 / 2.0
 var myfraction2 = 5 / 2.0
@@ -15,6 +16,26 @@ mynumber += 4
 
 let myconstant = 5
 // myconstant = 4
+
+var myletter: Character = "🌭"
+var mytext: String = "My name is "
+let name = "John"
+mytext = mytext + name + "\nand I like "
+
+let age = 53
+let myage = "I am \(age) years old. Next year, I will be \(age+1) years old"
+
+mytext = mytext + "\(myletter)'s"
+
+var valid = true
+
+var myoptional: Int?
+myoptional = 5
+var myoptional2 = myoptional
+var total = myoptional! + myoptional! + 5
+
+var myname: (String, String) = ("John", "Doe")
+
 
 
 
