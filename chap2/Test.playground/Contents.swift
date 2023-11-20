@@ -40,3 +40,22 @@ var mytext2 = "\(myname.0) is \(myname.2) years old"
 var (name2, _, age2) = myname
 var mytext3 = "\(name2) is \(age2) years old"
 
+var smart = true
+var age4 = 19
+var message = "John is underage or dumb"
+
+if (age4 < 21) && smart {
+    message = "John is allowed"
+}
+
+var count = 0
+var myoptional3: Int? = 5
+
+if let myoptional3 {
+    count = count + myoptional3
+}
+
+if let uvalue = myoptional3, uvalue == 5 {
+    count = count + uvalue
+}
+
