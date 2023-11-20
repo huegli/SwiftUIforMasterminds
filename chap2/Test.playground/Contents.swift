@@ -84,4 +84,68 @@ var realage = age5 != nil ? age5! : 0
 var age6: Int?
 var maxage = age6 ?? 100
 
+age2 = 13
+message = ""
+switch age2 {
+case 13:
+    message = "Happy Bar Mitzvah!"
+case 16:
+    message = "Sweet Sixteen!"
+case 21:
+    message = "Welcome to Adulthood!"
+default:
+    message = "Happy Birthday!"
+}
 
+age2 = 54
+message = "You go to "
+switch age2 {
+case 2,3,4:
+    message += "Day Care"
+case 5,6,7,8,9,10,11:
+    message += "Elementary School"
+case 12,13,14,15,16,17:
+    message += "High School"
+case 18,19,20,21:
+    message += "College"
+default:
+    message += "Work"
+}
+
+message = ""
+var ages = (10, 20)
+switch ages {
+case (let x, 20):
+    message = "Too close to \(x)"
+case (_, 30):
+    message = "The right age"
+case (let x, 40):
+    message = "Too far to \(x)"
+default:
+    message = "Way too far"
+}
+
+message = ""
+ages = (10, 20)
+switch ages {
+case let (x, y) where x > y:
+    message = "Too young"
+case let (x, y) where x == y:
+    message = "The same age"
+case let (x, y) where x < y:
+    message = "Too old"
+default:
+    message = "Not found"
+}
+
+age2 = 19
+message = switch age {
+case 13:
+    "Happy Bar Mitzvah"
+case 16:
+    "Sweet Sixteen"
+case 21:
+    "Welcome to Adulthood"
+default:
+    "Happy Birthday"
+}
