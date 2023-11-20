@@ -59,3 +59,29 @@ if let uvalue = myoptional3, uvalue == 5 {
     count = count + uvalue
 }
 
+mynumber = 6
+if mynumber % 2 == 0 {
+    mynumber = mynumber + 2
+} else {
+    mynumber = mynumber + 1
+}
+
+age2 = 19
+message = "The customer is "
+if age2 < 21 {
+    message += "underage"
+} else if age2 > 21 {
+    message += "allowed"
+} else {
+    message += "21 years old"
+}
+
+message = age < 21 ? "Underage" : "Allowed"
+
+var age5: Int? = 19
+var realage = age5 != nil ? age5! : 0
+
+var age6: Int?
+var maxage = age6 ?? 100
+
+
