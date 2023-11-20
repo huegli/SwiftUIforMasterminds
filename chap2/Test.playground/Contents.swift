@@ -34,16 +34,9 @@ myoptional = 5
 var myoptional2 = myoptional
 var total = myoptional! + myoptional! + 5
 
-var myname: (String, String) = ("John", "Doe")
-
-
-
-
-
-
-
-
-
-
-
+var myname = (name: "John", surname: "Doe", age: 44)
+myname.0 = "George"
+var mytext2 = "\(myname.0) is \(myname.2) years old"
+var (name2, _, age2) = myname
+var mytext3 = "\(name2) is \(age2) years old"
 
